@@ -22,8 +22,8 @@ export default function CustomDrawwerContent(props) {
        
     </DrawerContentScrollView>
     <Pressable onPress={closeDrawer} style={{padding:20, paddingBottom:bottom+10}}>
-    <Image style={{height:10}} source={require('../assets/images/logout.png')}/>
-    {/* <Text>Logout</Text> */}
+    
+    <Text>Logout</Text>
         </Pressable>
         </View>
     )

@@ -10,7 +10,7 @@ const Setting = () => {
     }
     return (
         <View>
-            <Text>Setting nnnnn</Text>
+            <Text>Setting</Text>
             <Button title="Drawer" onPress={openDrawer}/>
         </View>
     );
