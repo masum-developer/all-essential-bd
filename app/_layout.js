@@ -7,48 +7,66 @@ import CustomDrawwerContent from '../components/customDrawwerContent';
 
 
 const _layout = () => {
-    return <Drawer 
+    return <Drawer
         screenOptions={{
-            drawerLabelStyle:{
-                marginLeft:-20
+            drawerLabelStyle: {
+                marginLeft: -20
             },
-            drawerActiveBackgroundColor:'gray',
-            drawerActiveTintColor:'white'
+            drawerActiveBackgroundColor: 'gray',
+            drawerActiveTintColor: 'white'
         }}
-      
+
         drawerContent={CustomDrawwerContent}
     >
         <Drawer.Screen
             name="home"
             options={{
                 drawerLabel: 'Home',
-                title: 'Home',
-                drawerIcon:({size,color})=>(
+                title: 'All Essential BD',
+                drawerIcon: ({ size, color }) => (
                     <FontAwesome name="home" size={size} color={color} />
-                )
+                ),
+                headerTitleAlign: 'center'
+
+            }}
+
+        />
+        <Drawer.Screen
+            name="about"
+            options={{
+                drawerLabel: 'About',
+                title: 'About',
+                drawerIcon: ({ size, color }) => (
+                    <Entypo name="info-with-circle" size={size} color={color} />
+                ),
+                headerTitleAlign: 'center'
+            }}
+
+        />
+        <Drawer.Screen
+            name="contact"
+            options={{
+                drawerLabel: 'Contact',
+                title: 'Contact',
+                drawerIcon: ({ size, color }) => (<AntDesign name="contacts" size={size} color={color} />)
+                ,
+                headerTitleAlign: 'center'
+
             }}
 
         />
         <Drawer.Screen
             name="index"
             options={{
-                drawerLabel: 'About',
-                title: 'About',
-                drawerIcon:({size,color})=>(
-                    <Entypo name="info-with-circle" size={size} color={color} />
-                )
+                drawerLabel: 'Login',
+                title: 'Login',
+                drawerIcon: ({ size, color }) => (<AntDesign name="login" size={size} color={color} />)
+                ,
+                headerTitleAlign: 'center'
             }}
 
         />
-          <Drawer.Screen
-            name="contact"
-            options={{
-                drawerLabel: 'Contact',
-                title: 'Contact',
-                drawerIcon:({size,color})=>(<AntDesign name="contacts" size={size} color={color} />)
-            }}
 
-        />
     </Drawer>
 };
 

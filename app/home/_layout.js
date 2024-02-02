@@ -6,26 +6,33 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 const _layout = () => {
     return (
         <Tabs screenOptions={{
-            headerShown: false
+            //headerShown: false
         }}>
             <Tabs.Screen
                 name="index"
                 options={{
-                    tabBarIcon:({size,color})=>(<Ionicons name='home' size={size} color={color} />)
+                    tabBarIcon: ({ size, color }) => (<Ionicons name='home' size={size} color={color} />),
+                    tabBarLabel: "Home",
+                    headerTitle: "Home",
+                    headerTitleAlign: 'center'
                 }}
-             />
-              <Tabs.Screen
+            />
+
+            <Tabs.Screen
                 name="settings"
                 options={{
-                    tabBarIcon:({size,color})=>(<Ionicons name='settings' size={size} color={color} />)
+                    tabBarIcon: ({ size, color }) => (<Ionicons name='settings' size={size} color={color} />),
+                    tabBarLabel: "Settings",
+                    headerTitle: "Settings",
+                    headerTitleAlign: 'center'
                 }}
-             />
-             <Tabs.Screen
+            />
+            <Tabs.Screen
                 name="notification"
                 options={{
-                    tabBarIcon:({size,color})=>(<Ionicons name='notifications' size={size} color={color} />)
+                    tabBarIcon: ({ size, color }) => (<Ionicons name='notifications' size={size} color={color} />)
                 }}
-             />
+            />
 
         </Tabs>
     );
