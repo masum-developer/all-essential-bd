@@ -35,7 +35,7 @@ const _layout = () => {
             name="about"
             options={{
                 drawerLabel: 'About',
-                title: 'About',
+                title: 'All Essential BD',
                 drawerIcon: ({ size, color }) => (
                     <Entypo name="info-with-circle" size={size} color={color} />
                 ),
@@ -47,7 +47,7 @@ const _layout = () => {
             name="contact"
             options={{
                 drawerLabel: 'Contact',
-                title: 'Contact',
+                title: 'All Essential BD',
                 drawerIcon: ({ size, color }) => (<AntDesign name="contacts" size={size} color={color} />)
                 ,
                 headerTitleAlign: 'center'
@@ -59,7 +59,7 @@ const _layout = () => {
             name="index"
             options={{
                 drawerLabel: 'Login',
-                title: 'Login',
+                title: 'All Essential BD',
                 drawerIcon: ({ size, color }) => (<AntDesign name="login" size={size} color={color} />)
                 ,
                 headerTitleAlign: 'center'

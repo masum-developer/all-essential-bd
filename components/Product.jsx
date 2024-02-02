@@ -16,10 +16,11 @@ const styles = StyleSheet.create({
     width: 200,
     height: 50,
     padding: 10,
-    backgroundColor: "pink",
+    backgroundColor: "white",
     margin: 10,
     borderRadius: 5,
     borderWidth: 2,
-    borderColor: "purple",
+    borderColor: "black",
+    justifyContent: "center",
   },
 });

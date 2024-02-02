@@ -5,16 +5,20 @@ const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     return (
-        <View style={styles.container}>
-            <View style={styles.form}>
-                <Image style={styles.image} source={require('../assets/images/logo.png')} />
-                <Text style={styles.label}>Username</Text>
-                <TextInput style={styles.input} placeholder='Enter Your Username' />
-                <Text style={styles.label}>Password</Text>
-                <TextInput style={styles.input} placeholder='Enter Your Password' secureTextEntry />
-                <Button title="Login" onPress={() => { }} />
+        <>
+            <View style={styles.container}>
+
+                <View style={styles.form}>
+                    <Text style={{ textAlign: 'center', fontSize: 20 }}>Login</Text>
+                    <Image style={styles.image} source={require('../assets/images/logo.png')} />
+                    <Text style={styles.label}>Username</Text>
+                    <TextInput style={styles.input} placeholder='Enter Your Username' />
+                    <Text style={styles.label}>Password</Text>
+                    <TextInput style={styles.input} placeholder='Enter Your Password' secureTextEntry />
+                    <Button title="Login" onPress={() => { }} />
+                </View>
             </View>
-        </View>
+        </>
     );
 };
 
